@@ -103,8 +103,8 @@
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Name>${project.artifactId}</Bundle-Name>
 						<Export-Package>
-							org.wso2.siddhi.extension.WorldCloud,
-							org.wso2.siddhi.extension.WorldCloud.*,
+							org.wso2.siddhi.extension.worldcloud,
+							org.wso2.siddhi.extension.worldcloud.*,
 							cmu.arktweetnlp.*,
 							com.fasterxml.jackson.core.*,
 							edu.berkeley.nlp.util.*,
@@ -119,6 +119,15 @@
 						</Import-Package>
 						<DynamicImport-Package>*</DynamicImport-Package>
 					</instructions>
+					<resources>
+						<resource>
+						      <directory>src/main/resources</directory>
+						      <filtering>false</filtering>
+						      <excludes>
+							<exclude>**/model.20120919</exclude>
+						      </excludes>
+						</resource>
+					</resources>
 				</configuration>
 			</plugin>
 		</plugins>

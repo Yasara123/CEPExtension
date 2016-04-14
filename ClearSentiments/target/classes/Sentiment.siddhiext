@@ -16,6 +16,6 @@
 # under the License.
 #
 
-trackWord=org.wso2.siddhi.extension.ClearSentiments.ClrSentiment
-getRate=org.wso2.siddhi.extension.ClearSentiments.SentimentRate
+trackWord=org.wso2.siddhi.extension.clearsentiments.CandidateTextLines
+getRate=org.wso2.siddhi.extension.clearsentiments.SentimentRate
 

@@ -3,12 +3,9 @@ package org.wso2.siddhi.extension.worldcloud;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.StringTokenizer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.wso2.siddhi.core.config.ExecutionPlanContext;
@@ -23,7 +20,6 @@ import org.wso2.siddhi.core.query.processor.Processor;
 import org.wso2.siddhi.core.query.processor.stream.StreamProcessor;
 import org.wso2.siddhi.query.api.definition.AbstractDefinition;
 import org.wso2.siddhi.query.api.definition.Attribute;
-
 import cmu.arktweetnlp.Tagger;
 import cmu.arktweetnlp.Tagger.TaggedToken;
 
@@ -55,7 +51,7 @@ public class WorldCloudText extends StreamProcessor {
             "pataki", "george", "georgepataki", "election", "election2016", "wso2", "wso2con", "wso2conasia", "2016",
             "wso2con2016" };
     private static Set<String> stopWordSet;
-    private static String modelFilename = "/home/ubuntu/model.20120919";
+    private static String modelFilename = "/model.20120919";
     private static Tagger tagger;
     private static VariableExpressionExecutor variableExpressionText;
     private static String option = "NLP";
@@ -150,7 +146,6 @@ public class WorldCloudText extends StreamProcessor {
     @Override
     protected List<Attribute> init(AbstractDefinition inputDefinition,
             ExpressionExecutor[] attributeExpressionExecutors, ExecutionPlanContext executionPlanContext) {
-        // TODO Auto-generated method stub
         if (!(attributeExpressionExecutors.length == 2)) {
             throw new UnsupportedOperationException("Invalid number of Arguments");
         }

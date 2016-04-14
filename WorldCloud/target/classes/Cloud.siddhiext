@@ -18,6 +18,6 @@
 
 
 
-getSNouns2=org.wso2.siddhi.extension.WorldCloud.ArkTextStream2
+getSNouns=org.wso2.siddhi.extension.worldcloud.WorldCloudText
 
 

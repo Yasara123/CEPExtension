@@ -70,12 +70,12 @@
     <dependency>
     <groupId>edu.stanford.nlp</groupId>
     <artifactId>stanford-corenlp</artifactId>
-    <version>3.5.2</version>
+    <version>3.6.0</version>
 </dependency>
 <dependency>
     <groupId>edu.stanford.nlp</groupId>
     <artifactId>stanford-corenlp</artifactId>
-    <version>3.5.2</version>
+    <version>3.6.0</version>
     <classifier>models</classifier>
 </dependency>
     <dependency>
@@ -104,8 +104,8 @@
                             Jama
                         </Private-Package>
                         <Export-Package>
-                        	org.wso2.siddhi.extension.ClearSentiments,
-                            org.wso2.siddhi.extension.ClearSentiments.*
+                       	    org.wso2.siddhi.extension.clearsentiments,
+                            org.wso2.siddhi.extension.clearsentiments.*
                         </Export-Package>
                         <Import-Package>
                             *;resolution:=optional
@@ -115,9 +115,21 @@
                         </DynamicImport-Package>
                         <Embed-Dependency>jollyday,joda-time</Embed-Dependency>
                     </instructions>
+		<resources>
+			<resource>
+			      <directory>src/main/resources</directory>
+			      <filtering>false</filtering>
+			      <excludes>
+				<exclude>**/negativewords.txt</exclude>
+				<exclude>**/positivewords.txt</exclude>
+				<exclude>**/affinwords.txt</exclude>
+			      </excludes>
+			    </resource>
+			</resources>
                 </configuration>
             </plugin>
         </plugins>
+
     </build>
 </project>
 

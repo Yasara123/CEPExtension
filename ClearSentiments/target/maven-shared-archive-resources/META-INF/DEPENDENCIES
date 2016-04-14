@@ -17,10 +17,6 @@ From: 'an unknown organization'
     License: The GNU Lesser General Public License, Version 2.1  (http://www.gnu.org/licenses/lgpl-2.1.html)
   - Jollyday (http://sourceforge.net/projects/jollyday) de.jollyday:jollyday:jar:0.4.7
     License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
-  - Stanford CoreNLP (http://nlp.stanford.edu/software/corenlp.shtml) edu.stanford.nlp:stanford-corenlp:jar:3.5.2
-    License: GNU General Public License Version 3  (http://www.gnu.org/licenses/gpl-3.0.txt)
-  - Stanford CoreNLP (http://nlp.stanford.edu/software/corenlp.shtml) edu.stanford.nlp:stanford-corenlp:jar:3.5.2
-    License: GNU General Public License Version 3  (http://www.gnu.org/licenses/gpl-3.0.txt)
   - Metrics Core (http://metrics.codahale.com/metrics-core/) io.dropwizard.metrics:metrics-core:bundle:3.1.0
     License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0.html)
   - Apache log4j  org.apache.log4j.wso2:log4j:bundle:1.2.17.wso2v1
